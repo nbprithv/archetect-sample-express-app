@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node build/app.js",
-    "build": "ts-mocha -p ./tsconfig.json */tests/**/*.spec.ts; tsc",
+    "build": "npm install; ts-mocha -p ./tsconfig.json */tests/**/*.spec.ts; tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
     "prod": "tsc && node ./build/app.js",
     "test": "ts-mocha -p ./tsconfig.json */tests/**/*.spec.ts"
